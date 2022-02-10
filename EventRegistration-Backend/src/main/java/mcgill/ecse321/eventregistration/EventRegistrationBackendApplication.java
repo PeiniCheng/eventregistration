@@ -10,8 +10,9 @@ public class EventRegistrationBackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EventRegistrationBackendApplication.class, args);
 	}
-        @RequestMapping("/")
-        public String greeting(){
-        return "Hello world!";
-  }
+
+	@RequestMapping("/")
+	public String greeting() {
+		return "Hello world!";
+	}
 }
