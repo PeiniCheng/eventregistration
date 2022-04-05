@@ -1,0 +1,31 @@
+name: Deploy to Heroku
+
+on:
+  push:
+    branches: [ main ]
+
+# Backend must be deployed before Frontend, add "needs: backend" to the frontend job
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy Backend to Heroku
+        uses: AkhileshNS/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: "206595d8-90ca-4e92-a7f2-25600b8f9919"
+          heroku_app_name: "eventregistration-backend-01ff"
+          heroku_email: "cpn020913@gmail.com"
+          dontuseforce: false
+  frontend:
+    needs: backend
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy Frontend to Heroku
+        uses: AkhileshNS/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: "206595d8-90ca-4e92-a7f2-25600b8f9919"
+          heroku_app_name: "eventregistration-backend-01ff"
+          heroku_email: "cpn020913@gmail.com"
+          dontuseforce: false
