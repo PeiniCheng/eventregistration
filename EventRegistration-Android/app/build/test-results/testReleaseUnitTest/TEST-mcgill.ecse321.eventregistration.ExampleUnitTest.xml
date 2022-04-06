@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mcgill.ecse321.eventregistration.ExampleUnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-05T17:34:17" hostname="DESKTOP-M8ELEUJ" time="0.001">
+  <properties/>
+  <testcase name="addition_isCorrect" classname="mcgill.ecse321.eventregistration.ExampleUnitTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
