@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.1.2" type="incidents">
+
+    <incident
+        id="RedundantLabel"
+        severity="warning"
+        message="Redundant label can be removed">
+        <fix-attribute
+            description="Delete label"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="label"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="18"
+            column="13"
+            startOffset="637"
+            endLine="18"
+            endColumn="45"
+            endOffset="669"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-attribute
+            description="Set contentDescription"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="contentDescription"
+            value="TODO"
+            dot="4"
+            mark="0"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="25"
+            column="6"
+            startOffset="1024"
+            endLine="25"
+            endColumn="75"
+            endOffset="1093"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/content_main.xml"
+            line="8"
+            column="6"
+            startOffset="358"
+            endLine="8"
+            endColumn="14"
+            endOffset="366"/>
+    </incident>
+
+    <incident
+        id="TextFields"
+        severity="warning"
+        message="This text field does not specify an `inputType`">
+        <fix-attribute
+            description="Set inputType"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="inputType"
+            value="TODO"
+            dot="4"
+            mark="0"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/content_main.xml"
+            line="38"
+            column="10"
+            startOffset="1531"
+            endLine="38"
+            endColumn="18"
+            endOffset="1539"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/content_main.xml"
+            line="38"
+            column="10"
+            startOffset="1531"
+            endLine="38"
+            endColumn="18"
+            endOffset="1539"/>
+    </incident>
+
+    <incident
+        id="LintError"
+        severity="error"
+        message="The lint detector&#xA;    `androidx.appcompat.view.OnClickXmlDetector`&#xA;called `context.getMainProject()` during module analysis.&#xA;&#xA;This does not work correctly when running in AGP (7.1.2).&#xA;&#xA;In particular, there may be false positives or false negatives because&#xA;the lint check may be using the minSdkVersion or manifest information&#xA;from the library instead of any consuming app module.&#xA;&#xA;Contact the vendor of the lint issue to get it fixed/updated (if&#xA;known, listed below), and in the meantime you can try to work around&#xA;this by disabling the following issues:&#xA;&#xA;&quot;UsingOnClickInXml&quot;&#xA;&#xA;Issue Vendors:&#xA;Vendor: Android Open Source Project (appcompat-1.3.0)&#xA;Identifier: appcompat-1.3.0&#xA;Feedback: https://issuetracker.google.com/issues/new?component=192731&#xA;&#xA;Call stack: Context.getMainProject(Context.kt:117)←OnClickXmlDetector.visitAttribute(OnClickXmlDetector.kt:51)←ResourceVisitor.visitElement(ResourceVisitor.java:161)←ResourceVisitor.visitElement(ResourceVisitor.java:177)←ResourceVisitor.visitElement(ResourceVisitor.java:177)←ResourceVisitor.visitFile(ResourceVisitor.java:125)←LintDriver$checkResourceFolder$1.run(LintDriver.kt:2233)←LintClient.runReadAction(LintClient.kt:1786)←LintDriver$LintClientWrapper.runReadAction(LintDriver.kt:2707)←LintDriver.checkResourceFolder(LintDriver.kt:2228)←LintDriver.checkResFolder(LintDriver.kt:2181)←LintDriver.runFileDetectors(LintDriver.kt:1376)←LintDriver.checkProject(LintDriver.kt:1168)←LintDriver.checkProjectRoot(LintDriver.kt:631)←LintDriver.access$checkProjectRoot(LintDriver.kt:156)←LintDriver$analyzeOnly$1.invoke(LintDriver.kt:445)←LintDriver$analyzeOnly$1.invoke(LintDriver.kt:438)←LintDriver.doAnalyze(LintDriver.kt:505)←LintDriver.analyzeOnly(LintDriver.kt:437)←LintCliClient$analyzeOnly$1.invoke(LintCliClient.kt:242)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/content_main.xml"/>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/content_main.xml"
+            line="49"
+            column="13"
+            startOffset="1953"
+            endLine="49"
+            endColumn="40"
+            endOffset="1980"/>
+    </incident>
+
+    <incident
+        id="TrustAllX509TrustManager"
+        severity="warning"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="com/loopj/android/http/MySSLSocketFactory$1.class"/>
+    </incident>
+
+    <incident
+        id="TrustAllX509TrustManager"
+        severity="warning"
+        message="`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="com/loopj/android/http/MySSLSocketFactory$1.class"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.3.0 is available: 1.4.1">
+        <fix-replace
+            description="Change to 1.4.1"
+            family="Update versions"
+            oldString="1.3.0"
+            replacement="1.4.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="35"
+            column="20"
+            startOffset="793"
+            endLine="35"
+            endColumn="56"
+            endOffset="829"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.4.0 is available: 1.5.0">
+        <fix-replace
+            description="Change to 1.5.0"
+            family="Update versions"
+            oldString="1.4.0"
+            replacement="1.5.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="36"
+            column="20"
+            startOffset="849"
+            endLine="36"
+            endColumn="64"
+            endOffset="893"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.0.4 is available: 2.1.3">
+        <fix-replace
+            description="Change to 2.1.3"
+            family="Update versions"
+            oldString="2.0.4"
+            replacement="2.1.3"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="37"
+            column="20"
+            startOffset="913"
+            endLine="37"
+            endColumn="70"
+            endOffset="963"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-fragment than 2.3.5 is available: 2.4.1">
+        <fix-replace
+            description="Change to 2.4.1"
+            family="Update versions"
+            oldString="2.3.5"
+            replacement="2.4.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="38"
+            column="20"
+            startOffset="983"
+            endLine="38"
+            endColumn="67"
+            endOffset="1030"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-ui than 2.3.5 is available: 2.4.1">
+        <fix-replace
+            description="Change to 2.4.1"
+            family="Update versions"
+            oldString="2.3.5"
+            replacement="2.4.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="39"
+            column="20"
+            startOffset="1050"
+            endLine="39"
+            endColumn="61"
+            endOffset="1091"/>
+    </incident>
+
+</incidents>

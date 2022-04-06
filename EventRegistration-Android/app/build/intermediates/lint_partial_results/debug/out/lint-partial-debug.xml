@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.1.2" type="partial_results">
+    <map id="UnusedResources">
+        <location id="R.string.hello_second_fragment"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="11"
+            column="13"
+            startOffset="480"
+            endLine="11"
+            endColumn="41"
+            endOffset="508"/>
+        <entry
+            name="model"
+            string="attr[colorPrimary(R),actionBarSize(R),colorPrimaryVariant(R)],color[purple_200(U),black(U),teal_200(U),white(U),teal_700(U),purple_700(U),purple_500(U)],dimen[fab_margin(U)],drawable[ic_launcher_foreground(U),ic_launcher_background(U),ic_launcher_foreground_1(R)],id[newperson_name(U),nav_graph(D),FirstFragment(U),fab(D),button_first(U),action_settings(U),textview_first(U),error(U),toolbar(D),action_SecondFragment_to_FirstFragment(R),textview_second(U),action_FirstFragment_to_SecondFragment(R),button_second(U),nav_host_fragment_content_main(U),SecondFragment(U)],layout[fragment_second(U),content_main(U),fragment_first(U),activity_main(U)],menu[menu_main(U)],mipmap[ic_launcher_round(U),ic_launcher(U)],navigation[nav_graph(U)],string[next(U),previous(U),action_settings(U),second_fragment_label(U),newperson_button(U),app_name(U),first_fragment_label(U),appbar_scrolling_view_behavior(R),hello_first_fragment(U),hello_second_fragment(D),newperson_hint(U)],style[Theme_EventRegistrationAndroid(U),Theme_EventRegistrationAndroid_PopupOverlay(U),ThemeOverlay_AppCompat_Dark_ActionBar(R),Theme_EventRegistrationAndroid_AppBarOverlay(U),Theme_EventRegistrationAndroid_NoActionBar(U),ThemeOverlay_AppCompat_Light(R),Theme(R),Theme_MaterialComponents_DayNight_DarkActionBar(R)];b^d,1d^1a^26^18,1e^2c^24^2f^29,1f^2d^12^25^14,20^33^0^1^31^1e^a,21^27,22^c^b,23^c^b,24^10^2b^1f^1c^28^1d,30^37^9^8^6^5^7^4^2^3,31^35,33^32,34^30^36;;;"/>
+    </map>
+
+</incidents>

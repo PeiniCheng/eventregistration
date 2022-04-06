@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" tests="14" skipped="0" failures="0" errors="0" timestamp="2022-03-21T16:04:04" hostname="DESKTOP-M8ELEUJ" time="0.103">
+  <properties/>
+  <testcase name="testCreatePersonEmpty()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.071"/>
+  <testcase name="testCreatePerson()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.003"/>
+  <testcase name="testCreateEventNull()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.001"/>
+  <testcase name="testCreateEventSpaces()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.008"/>
+  <testcase name="testCreateEvent()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.002"/>
+  <testcase name="testCreateEventEndTimeBeforeStartTime()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.001"/>
+  <testcase name="testGetNonExistingPerson()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.002"/>
+  <testcase name="testRegisterNull()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.001"/>
+  <testcase name="testCreatePersonSpaces()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.002"/>
+  <testcase name="testRegister()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.004"/>
+  <testcase name="testGetExistingPerson()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.001"/>
+  <testcase name="testCreatePersonNull()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.002"/>
+  <testcase name="testRegisterPersonAndEventDoNotExist()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.001"/>
+  <testcase name="testCreateEventEmpty()" classname="mcgill.ecse321.eventregistration.service.TestEventRegistrationService" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
