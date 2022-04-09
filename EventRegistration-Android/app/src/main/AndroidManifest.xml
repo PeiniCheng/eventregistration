@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EventRegistrationAndroid">
         <activity
-            android:name=".EventActivity"></activity>
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".EventActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -24,7 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".SecondActivity" />
     </application>
 
 </manifest>
